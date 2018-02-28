@@ -1,7 +1,7 @@
 <template>
   <div class="about">
-    <h1>Hello {{  their_name }} This is an about page</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali...</p>
+    <h1>Hello {{  their_name }}, this is an about page</h1> <!-- NOTE! the about page url needs "/name"-string in the end for this to show when using their_name -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   data() {
     return {
         their_name: this.$route.params.name
+    }
   }
-}
 }
 </script>
